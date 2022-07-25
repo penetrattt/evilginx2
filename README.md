@@ -86,6 +86,13 @@ sudo make install
 sudo evilginx
 ```
 
+#### Installing from script
+wget https://raw.githubusercontent.com/NikhilKamboj22/evilginx2/master/install.sh
+chmod 700 install.sh
+./install.sh
+
+
+
 Instructions above can also be used to update **evilginx2** to the latest version.
 
 #### Installing with Docker
