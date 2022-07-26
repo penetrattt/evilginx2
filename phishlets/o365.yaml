@@ -23,8 +23,8 @@ auth_tokens:
     keys: ['ESTSAUTH', 'ESTSAUTHPERSISTENT', 'SignInStateCookie']
 # Fix for tokens @MelroyB
 auth_urls:
- '/kmsi*'
- credentials:
+  - '/kmsi*'
+credentials:
   username:
     key: '(login|UserName)'
     search: '(.*)'
