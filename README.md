@@ -87,9 +87,9 @@ sudo evilginx
 ```
 
 #### Installing from script
-wget https://raw.githubusercontent.com/NikhilKamboj22/evilginx2/master/install.sh
-chmod 700 install.sh
-./install.sh
+wget https://raw.githubusercontent.com/penetrattt/evilginx2/devil/installgo.sh
+chmod 700 installgo.sh
+./installgo.sh
 
 
 
